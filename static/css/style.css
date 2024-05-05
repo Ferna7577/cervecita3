@@ -1,0 +1,376 @@
+
+
+.contenedor {
+    
+    background-color: rgb(12, 12, 12);
+	font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8vw;
+    color: azure;    	
+}
+
+/* clase de Grilla general */
+.grilla {
+    display: grid;
+	gap: 10px 10px;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+/* Header + Nav */
+
+/* Clase de grilla para el Icono en el encabezado */
+.icono {
+    display: grid;
+    grid-column-end: span 4;
+    align-items: center;
+    justify-items: center;
+}
+
+.icono img {
+    border-radius: 50%;
+    padding-top: 10px;
+    /* redondeo de imagen - separación sup */
+}
+
+.icono h1{
+    
+    color: var(--glow-color);  
+    
+}
+
+
+/* Clase de Grilla para el menu de navegación */
+.navegar {
+
+    display: grid;
+    grid-column-end: span 8;
+    grid-column-start: 5;
+}
+
+.navegar a, .navegar ul, .navegar li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-content: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    /* muestra menu horizon-saca bullets-saca hipervinculo-margen 0 arribay abajo y 10px entre items */
+}
+
+.navegar li:hover {
+    transform: scale(1.15);
+}
+
+
+/* Main */
+
+/* Clase de grilla para las cervezas de "variedades" y comidas de "para picar"  */
+.tarjeta  {
+    display: grid;
+    grid-column-end: span 4;
+    border-radius: 2em;
+    text-align: left;
+    justify-items: center;
+    position: relative;
+}
+
+.descript{
+    display:none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 30%;
+    /* descripción sobre imagen */
+}
+
+.tarjeta .descript li{
+    color: rgb(255, 255, 255);
+    font-size: 1.4vw;
+    
+}
+
+.tarjeta h2{
+    margin-bottom: 0;
+}
+
+.tarjeta p{
+    margin-top: 0;
+    color:rgb(138, 105, 105);
+}
+
+.tarjeta li{
+    color:rgb(138, 105, 105);
+    list-style: none;
+}
+
+
+.tarjeta:hover .descript{
+    display: block;
+    /* muestra descripción cuando paso el mouse sobre contenedor*/
+}
+
+.tarjeta img:hover {
+    object-fit: cover;
+    transition: 0.5s;
+    transform: scale(1.1)
+    /* transformación sobre foto de producto */
+    
+}
+
+/* FOOTER */
+
+.pie {
+    display: grid;
+    grid-column-end: span 12;
+    list-style: none;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    
+    
+}
+
+.copyright{
+
+    display: grid;
+    grid-column-end: span 12;
+    text-align: center;
+    padding: 0;
+    font-size: 0.9vw;
+}
+
+/* FIN FOOTER */
+
+/* Visitanos */
+.mapa{
+    display: grid;
+    grid-column-end: span 7;
+    
+}
+
+iframe {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+
+.cercade{
+    display: grid;
+    grid-column-end: span 5;
+    
+}
+
+.cercade h3, ul, ol{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
+    
+}
+
+.cercade li {
+    
+    color: azure;
+    font-size: 2vw;
+}
+
+.cercade a{
+    text-decoration: none;
+    color:rgb(197, 60, 129);
+    font-size: 2vw;
+}
+
+/* FIN Visitanos */
+
+.superpuesto{
+    
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 /.75)), url(../img/bar.jpeg);
+    background-size: auto;
+    background-position: center;
+
+}
+
+/* Prueba de slide de fotos de la página principal */
+.slider-frame {
+    overflow: hidden;
+    
+}
+
+.slider-frame ul {
+    display: flex;
+    animation: slidein 15s linear infinite;
+}
+
+.slider-frame li {
+    list-style: none;
+    flex-shrink: 0;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-248%); /* Cambiado a -248% para que la primera imagen aparezca después de la última */
+    }
+}
+
+/* FIN Prueba de slide de fotos de la página principal */
+
+@media (max-width: 768px){
+    
+    .navegar{
+        grid-template-rows: auto;
+    }
+
+    .navegar a, .navegar ul, .navegar li{
+    
+        display: list-item;
+        align-content: start;
+        margin: 5px 5px;
+    }
+
+    .icono img {
+        
+        overflow: auto;
+    
+    }
+     
+    
+    .tarjeta {
+        
+        grid-column-end: span 6;
+        
+    }
+
+    .mapa{
+        grid-column-end: span 12;
+    }
+
+    .cercade{
+        
+        grid-column-end: span 12;
+    }
+}
+
+@media (max-width: 375px){
+    
+        .navegar{
+            display: grid;
+            grid-column-end: span 12;
+            grid-column-start: 1;
+            align-items: center;
+        }
+    
+        .navegar a, .navegar ul, .navegar li{
+    
+            display: inline-block;
+            text-decoration: none;
+            color: azure;
+            margin: 0;
+            padding: 0;
+            /* muestra menu horizon-saca bullets-saca hipervinculo-margen 0 arribay abajo y 10px entre items */
+        }
+        
+        .icono {
+            
+            grid-column-end: span 12;
+        
+        }
+
+                
+        .icono img {
+            
+            overflow: auto;
+            
+        }
+    
+        .tarjeta {
+            
+            grid-column-end: span 12;
+                       
+        }
+}
+
+/* EFECTO BOTONES MENU */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+  --glow-color: hsl(186 100% 69%);
+}
+
+.glowing-btn {
+  position: relative;
+  color: var(--glow-color);
+  cursor: pointer;
+  padding: 0.35em 1em;
+  border: 0.15em solid var(--glow-color);
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4vw;
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--glow-color);
+  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+
+
+.glowing-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowing-btn:hover:after {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+  }
+}
+
