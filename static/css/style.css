@@ -374,3 +374,27 @@ iframe {
   }
 }
 
+
+    /* Estilos para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#comidas, #bebidas {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+    /* FIN Estilos para el formulario */

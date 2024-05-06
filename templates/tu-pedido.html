@@ -32,8 +32,70 @@
         
         </div>
 
-    <main>
-        
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" pattern="[A-Za-z0-9\s]+" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" pattern="[0-9]{10}" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="comidas">Para picar:</label>
+        <select id="comidas" required>
+            <option value="Pizzas">Pizzas</option>
+            <option value="Hamburguesas">Hamburguesas</option>
+            <option value="Nachos">Nachos</option>
+            <option value="Picadas">Picadas</option>
+            <option value="Empanadas">Empanadas</option>
+            <option value="Veggies">Veggies</option>
+        </select>
+
+        <label for="bebidas">Variedades:</label>
+        <select id="bebidas" required>
+            <option value="Bock">Bock</option>
+            <option value="Clásica">Clásica</option>
+            <option value="Doble Malta">Doble Malta</option>
+            <option value="IPA">IPA</option>
+            <option value="Sin Alcohol">Sin Alcohol</option>
+            <option value="Stout">Stout</option>
+        </select>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const formulario = document.getElementById('miFormulario');
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+            // Validación personalizada
+            const telefono = document.getElementById('telefono').value;
+            if (telefono.length !== 10) {
+                alert('El número de teléfono debe tener 10 dígitos.');
+                return;
+            }
+
+            const email = document.getElementById('email').value;
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Por favor, introduce un email válido.');
+                return;
+            }
+
+            // Si todo está correcto, puedes enviar el formulario al servidor aquí
+            alert('Formulario enviado correctamente.');
+        });
+    </script>
+
+
+
     </main>
     
     <footer class="grilla">
