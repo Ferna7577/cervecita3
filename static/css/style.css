@@ -334,6 +334,7 @@ iframe {
   opacity: 0.7;
   filter: blur(1em);
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  /* este bkg es el color del sombreado de los botones */
   background: var(--glow-color);
   pointer-events: none;
 }
@@ -347,7 +348,9 @@ iframe {
   bottom: 0;
   opacity: 0;
   z-index: -1;
+  /* El de abajo es el color del relleno del botón al pasar el mouse */
   background-color: var(--glow-color);
+  /* El de abajo es el color del sombreado de los botones */
   box-shadow: 0 0 2em 0.2em var(--glow-color);
   transition: opacity 100ms linear;
 }
