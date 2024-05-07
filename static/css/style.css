@@ -97,6 +97,7 @@
 
 .tarjeta h2{
     margin-bottom: 0;
+    color: rgb(185, 139, 10);
 }
 
 .tarjeta p{
@@ -398,7 +399,7 @@ iframe {
     font-size: 1em;
   }
 }
-
+/* EFECTO BOTONES MENU */
 
     /* Estilos para el formulario */
 form {
@@ -416,7 +417,8 @@ input, textarea {
     margin-bottom: 10px;
 }
 button {
-    background-color: #007bff;
+    background-color:rgb(185,139,10);
+    /* background-color: #007bff; */
     color: #fff;
     border: none;
     padding: 10px 20px;
