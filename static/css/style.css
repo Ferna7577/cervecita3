@@ -32,6 +32,7 @@
 }
 
 .icono h1{
+    /* color de la fuente del logo */
     color: rgb(185,139,10);;
     /* color: var(--glow-color);   */
     
@@ -47,24 +48,28 @@
 }
 
 .navegar a, .navegar ul, .navegar li {
+    /* muestra menu horizon-saca bullets-saca hipervinculo-margen 0 arribay abajo y 10px entre items */
     display: inline-block;
     list-style: none;
     text-decoration: none;
+    /* Color fuente botón de navegación */
     color: rgb(255, 255, 255);
     align-content: center;
     justify-content: center;
     font-size: 1.4vw;
-    /* muestra menu horizon-saca bullets-saca hipervinculo-margen 0 arribay abajo y 10px entre items */
+    
 }
 
 .navegar li:hover {
+    /* Transformación al pasar el mouse */
     transform: scale(1.15);
 }
 
 
 /* Main */
 
-/* Clase de grilla para las cervezas de "variedades" y comidas de "para picar"  */
+/* Clase de grilla para las cervezas de "variedades" y comidas de "para picar" */
+
 .tarjeta  {
     display: grid;
     grid-column-end: span 4;
@@ -83,6 +88,8 @@
 }
 
 .tarjeta .descript li{
+    /* color de la fuente para la descripción de las cerveza de "variedades" */
+    /* Se probó todos los colores de la página, el único que se lee bien es blanco */
     color: rgb(255, 255, 255);
     font-size: 1.4vw;
     
@@ -94,10 +101,12 @@
 
 .tarjeta p{
     margin-top: 0;
+    /* color fuente de amargor, frio, etc de "variedades" */
     color:rgb(138, 105, 105);
 }
 
 .tarjeta li{
+    /* Color fuente de título de "variedades" */
     color:rgb(138, 105, 105);
     list-style: none;
 }
