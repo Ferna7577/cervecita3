@@ -3,6 +3,7 @@
 .contenedor {
     
     background-color: rgb(12, 12, 12);
+    
 	font-family: 'Times New Roman', Times, serif;
     font-size: 1.8vw;
     color: azure;    	
@@ -82,16 +83,16 @@
 .descript{
     display:none;
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     top: 30%;
     /* descripción sobre imagen */
 }
 
 .tarjeta .descript li{
-    /* color de la fuente para la descripción de las cerveza de "variedades" */
+    /* color y tamaño de la fuente para la descripción de las cerveza de "variedades" */
     /* Se probó todos los colores de la página, el único que se lee bien es blanco */
     color: rgb(255, 255, 255);
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     
 }
 
@@ -397,12 +398,20 @@ iframe {
     max-width: 400px;
     margin: 0 auto;
 }
-#miFormulario input, textarea {
+#miFormulario input, textarea, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    /* border-radius: 5%;*/
+    border: 0.25em solid rgb(185,139,10);
+    border-radius: 0.45em;
 }
+
+#miFormulario option, select, input, #comentario {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
 #comidas, #bebidas {
     width: 100%;
     padding: 10px;

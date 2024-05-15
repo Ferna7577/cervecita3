@@ -5,8 +5,8 @@
 
             // Validación personalizada minimo 10 digitos
             const telefono = document.getElementById('telefono').value;
-            if (telefono.length !== 10) {
-                alert('El número de teléfono debe tener 10 dígitos.');
+            if (telefono.length < 10) {
+                alert('El número de teléfono debe tener mínimo 10 dígitos.');
                 return;
             }
             // Valida email un @ y por lo menos un "."
