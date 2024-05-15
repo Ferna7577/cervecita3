@@ -195,43 +195,148 @@ iframe {
 
 /* FIN Visitanos */
 
-.superpuesto{
+/* IMAGANES DE INDEX */
+
+.imagenbar{
     
-    height: 100vh;
-    display: block;
-    justify-content: center;
-    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 /.75)), url(../img/bar.jpeg);
-    background-size: auto;
-    background-position: center;
-
+    display: grid;
+    height: 100%;
+    grid-column-end: span 6;
+    place-content: center;
+     
 }
 
-/* Prueba de slide de fotos de la página principal */
-.slider-frame {
-    overflow: hidden;
-    
+.textbar{
+
+    display: grid;
+    color: rgb(185, 139, 10);
+    grid-column-end: span 6;
+    place-content: center;
+
+}
+/* FIN INDEX */
+
+/* ESTILO PARA FORMULARIOS */
+
+#miFormulario {
+    max-width: 400px;
+    margin: 0 auto;
+}
+#miFormulario input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0.25em solid rgb(185,139,10);
+    border-radius: 0.45em;
 }
 
-.slider-frame ul {
-    display: flex;
-    animation: slidein 15s linear infinite;
+#miFormulario option, select, input, #comentario {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
 }
 
-.slider-frame li {
-    list-style: none;
-    flex-shrink: 0;
+#comidas, #bebidas {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-@keyframes slidein {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-248%); /* Cambiado a -248% para que la primera imagen aparezca después de la última */
-    }
+button {
+    background-color:rgb(185,139,10);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* FIN ESTILO PARA FORMULARIOS */
+
+/* EFECTO BOTONES MENU */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+
+    --glow-color: rgb(185,139,10);
+  
 }
 
-/* FIN Prueba de slide de fotos de la página principal */
+.glowing-btn {
+  position: relative;
+  color: rgb(185,139,10);
+  cursor: pointer;
+  padding: 0.35em 1em;
+  border: 0.15em solid rgb(185,139,10);
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4vw;
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
+    0px 0px 0.5em 0px rgb(185,139,10);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
+    0px 0px 0.5em 0px rgb(185,139,10);
+  box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
+    0px 0px 0.5em 0px rgb(185,139,10);
+  
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  /* este background es el color del sombreado de los botones */
+  /* background: rgb(185,139,10); */
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  /* El de abajo es el color del relleno del botón al pasar el mouse */
+  background: rgb(185,139,10);
+  /* El de abajo es el color del sombreado de los botones */
+  /* box-shadow: 0 0 2em 0.2em rgb(185,139,10); */
+  transition: opacity 100ms linear;
+  border-radius: 0.45em;
+}
+
+.glowing-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+
+
+.glowing-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowing-btn:hover:after {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+  }
+}
+/* FIN EFECTO BOTONES MENU */
+
+
 
 @media (max-width: 768px){
     
@@ -308,120 +413,4 @@ iframe {
         }
 }
 
-/* EFECTO BOTONES MENU */
 
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
-:root {
-
-    --glow-color: rgb(185,139,10);
-  
-}
-
-.glowing-btn {
-  position: relative;
-  color: rgb(185,139,10);
-  cursor: pointer;
-  padding: 0.35em 1em;
-  border: 0.15em solid rgb(185,139,10);
-  border-radius: 0.45em;
-  background: none;
-  perspective: 2em;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4vw;
-  -webkit-box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
-    0px 0px 0.5em 0px rgb(185,139,10);
-  -moz-box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
-    0px 0px 0.5em 0px rgb(185,139,10);
-  box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
-    0px 0px 0.5em 0px rgb(185,139,10);
-  
-}
-
-.glowing-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.7;
-  filter: blur(1em);
-  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  /* este background es el color del sombreado de los botones */
-  /* background: rgb(185,139,10); */
-  pointer-events: none;
-}
-
-.glowing-btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: -1;
-  /* El de abajo es el color del relleno del botón al pasar el mouse */
-  background: rgb(185,139,10);
-  /* El de abajo es el color del sombreado de los botones */
-  /* box-shadow: 0 0 2em 0.2em rgb(185,139,10); */
-  transition: opacity 100ms linear;
-}
-
-.glowing-btn:hover {
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: none;
-  animation: none;
-}
-
-
-.glowing-btn:hover:before {
-  filter: blur(1.5em);
-  opacity: 1;
-}
-
-.glowing-btn:hover:after {
-  opacity: 1;
-}
-
-@media only screen and (max-width: 600px) {
-  .glowing-btn{
-    font-size: 1em;
-  }
-}
-/* FIN EFECTO BOTONES MENU */
-
-/* Estilos para el formulario */
-
-#miFormulario {
-    max-width: 400px;
-    margin: 0 auto;
-}
-#miFormulario input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 0.25em solid rgb(185,139,10);
-    border-radius: 0.45em;
-}
-
-#miFormulario option, select, input, #comentario {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-style: oblique;
-}
-
-#comidas, #bebidas {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-button {
-    background-color:rgb(185,139,10);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-/* FIN Estilos para el formulario */
