@@ -75,7 +75,7 @@
     display: grid;
     grid-column-end: span 4;
     border-radius: 2em;
-    text-align: left;
+    text-align: center;
     justify-items: center;
     position: relative;
 }
@@ -103,7 +103,7 @@
 
 .tarjeta p{
     margin-top: 0;
-    /* color fuente de amargor, frio, etc de "variedades" */
+    /* color fuente de: amargor, frio, etc de "variedades" */
     color:rgb(138, 105, 105);
 }
 
