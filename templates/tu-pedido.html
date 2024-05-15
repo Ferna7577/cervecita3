@@ -34,16 +34,16 @@
 
     <form id="miFormulario">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
+        <input type="text" value="Juan" valid="nombre" required>
 
         <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" pattern="[A-Za-z0-9\s]+" required>
+        <input type="text" value="Av. Corrientes 1234,CABA" id="direccion" required >
 
         <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" pattern="[0-9]{10}" required>
+        <input type="tel" value="0111234567" id="telefono" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" required>
+        <input type="email" value="juan@email.com.ar" id="email" required>
 
         <label for="comidas">Para picar:</label>
         <select id="comidas" required>
@@ -71,28 +71,7 @@
         <button type="submit">Enviar</button>
     </form>
 
-    <script>
-        const formulario = document.getElementById('miFormulario');
-        formulario.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita que el formulario se envíe automáticamente
-
-            // Validación personalizada
-            const telefono = document.getElementById('telefono').value;
-            if (telefono.length !== 10) {
-                alert('El número de teléfono debe tener 10 dígitos.');
-                return;
-            }
-
-            const email = document.getElementById('email').value;
-            if (!email.includes('@') || !email.includes('.')) {
-                alert('Por favor, introduce un email válido.');
-                return;
-            }
-
-            // Si todo está correcto, puedes enviar el formulario al servidor aquí
-            alert('Formulario enviado correctamente.');
-        });
-    </script>
+    <script src="../static/js/validation.js"></script>
 
     </main>
     

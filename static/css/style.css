@@ -308,34 +308,27 @@ iframe {
 }
 
 /* EFECTO BOTONES MENU */
+
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 :root {
 
     --glow-color: rgb(185,139,10);
-  /* --glow-color: hsl(186 100% 69%); */
+  
 }
 
 .glowing-btn {
   position: relative;
-    color: rgb(185,139,10);
-  /* color: var(--glow-color); */
+  color: rgb(185,139,10);
   cursor: pointer;
   padding: 0.35em 1em;
   border: 0.15em solid rgb(185,139,10);
-  /* border: 0.15em solid var(--glow-color); */
   border-radius: 0.45em;
   background: none;
   perspective: 2em;
   font-family: "Raleway", sans-serif;
   font-size: 1.4vw;
-  /* -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), */
-    /* 0px 0px 0.5em 0px var(--glow-color); */
-  /* -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), */
-    /* 0px 0px 0.5em 0px var(--glow-color); */
-  /* box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), */
-    /* 0px 0px 0.5em 0px var(--glow-color); */
-    -webkit-box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
     0px 0px 0.5em 0px rgb(185,139,10);
   -moz-box-shadow: inset 0px 0px 0.5em 0px rgb(185,139,10),
     0px 0px 0.5em 0px rgb(185,139,10);
@@ -354,9 +347,8 @@ iframe {
   opacity: 0.7;
   filter: blur(1em);
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  /* este bkg es el color del sombreado de los botones */
-  /* background: var(--glow-color); */
-  background: rgb(185,139,10);
+  /* este background es el color del sombreado de los botones */
+  /* background: rgb(185,139,10); */
   pointer-events: none;
 }
 
@@ -370,11 +362,9 @@ iframe {
   opacity: 0;
   z-index: -1;
   /* El de abajo es el color del relleno del botón al pasar el mouse */
-  /* background-color: var(--glow-color); */
   background: rgb(185,139,10);
   /* El de abajo es el color del sombreado de los botones */
-  /* box-shadow: 0 0 2em 0.2em var(--glow-color); */
-  box-shadow: 0 0 2em 0.2em rgb(185,139,10);
+  /* box-shadow: 0 0 2em 0.2em rgb(185,139,10); */
   transition: opacity 100ms linear;
 }
 
@@ -399,17 +389,19 @@ iframe {
     font-size: 1em;
   }
 }
-/* EFECTO BOTONES MENU */
+/* FIN EFECTO BOTONES MENU */
 
-    /* Estilos para el formulario */
-form {
+/* Estilos para el formulario */
+
+#miFormulario {
     max-width: 400px;
     margin: 0 auto;
 }
-input, textarea {
+#miFormulario input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    /* border-radius: 5%;*/
 }
 #comidas, #bebidas {
     width: 100%;
@@ -418,10 +410,9 @@ input, textarea {
 }
 button {
     background-color:rgb(185,139,10);
-    /* background-color: #007bff; */
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
 }
-    /* FIN Estilos para el formulario */
+/* FIN Estilos para el formulario */
