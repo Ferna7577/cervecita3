@@ -337,7 +337,7 @@ button {
 /* FIN EFECTO BOTONES MENU */
 
 
-
+/* Configuraciones responsive */
 @media (max-width: 768px){
     
     .navegar{
@@ -349,6 +349,8 @@ button {
         display: list-item;
         align-content: start;
         margin: 5px 5px;
+        font-size: 110%;
+
     }
 
     .icono img {
@@ -357,10 +359,10 @@ button {
     
     }
      
-    
     .tarjeta {
         
         grid-column-end: span 6;
+        font-size: 210%;
         
     }
 
@@ -372,45 +374,31 @@ button {
         
         grid-column-end: span 12;
     }
+
+    .imagenbar{
+
+        display: grid;
+        grid-column-end: span 12;
+        place-content: center;
+
+    }
+
+    .textbar{
+
+        display: grid;
+        grid-column-end: 12;
+        justify-content: left;
+        grid-column-start: 1;
+        font-size: 210%;
+
+    }
+
+    .tarjeta .descript li{
+        
+        font-size: 100%;
+        
+    }
+
 }
 
-@media (max-width: 375px){
-    
-        .navegar{
-            display: grid;
-            grid-column-end: span 12;
-            grid-column-start: 1;
-            align-items: center;
-        }
-    
-        .navegar a, .navegar ul, .navegar li{
-    
-            display: inline-block;
-            text-decoration: none;
-            color: azure;
-            margin: 0;
-            padding: 0;
-            /* muestra menu horizon-saca bullets-saca hipervinculo-margen 0 arribay abajo y 10px entre items */
-        }
-        
-        .icono {
-            
-            grid-column-end: span 12;
-        
-        }
-
-                
-        .icono img {
-            
-            overflow: auto;
-            
-        }
-    
-        .tarjeta {
-            
-            grid-column-end: span 12;
-                       
-        }
-}
-
-
+/* FIN Configuraciones responsive */
