@@ -196,14 +196,16 @@
 }
 
 iframe {
+
     overflow-clip-margin: content-box;
     overflow: clip;
+    overflow: hidden;
     border-width: 2px;
     border-style: inset;
     border-color: initial;
     border-image: initial;
-}
 
+}
 
 .cercade{
     display: grid;
@@ -377,11 +379,11 @@ button {
 /* Configuraciones responsive */
 @media (max-width: 768px){
     
-    .navegar{
+    /* .navegar{
         grid-template-rows: auto;
-    }
+    } */
 
-    .navegar a, .navegar ul, .navegar li{
+    .navegar a, .navegar ul, .navegar li {
     
         display: list-item;
         align-content: start;
@@ -392,8 +394,24 @@ button {
 
     .icono img {
         
+        width: 90%;
+        height: 90%;
         overflow: auto;
     
+    }
+
+    .navegar {
+
+        grid-column-end: span 7;
+        grid-column-start: 8;
+
+    }
+
+    .icono {
+
+        grid-column-end: span 5;
+        grid-column-start: 2;
+
     }
      
     .tarjeta {
@@ -410,16 +428,18 @@ button {
         
     }
 
-    .mapa{
+    .mapa {
         grid-column-end: span 12;
     }
 
-    .cercade{
+    .cercade {
         
         grid-column-end: span 12;
+        font-size: 100%;
+
     }
 
-    .imagenbar{
+    .imagenbar {
 
         display: grid;
         grid-column-end: span 12;
@@ -427,7 +447,7 @@ button {
 
     }
 
-    .textbar{
+    .textbar {
 
         display: grid;
         grid-column-end: 12;
@@ -437,7 +457,7 @@ button {
 
     }
 
-    .tarjeta .descript li{
+    .tarjeta .descript li {
         
         font-size: 100%;
         
