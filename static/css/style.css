@@ -399,6 +399,11 @@ button {
         
     }
 
+    #miFormulario {
+        max-width: auto;
+        margin: 0 auto;
+    }
+
 }
 
 /* FIN Configuraciones responsive */
