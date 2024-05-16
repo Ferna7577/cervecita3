@@ -69,7 +69,44 @@
 
 /* Main */
 
-/* Clase de grilla para las cervezas de "variedades" y comidas de "para picar" */
+/* Clase de grilla para las comidas de "para picar" */
+
+.tarjetacomida  {
+    display: grid;
+    grid-column-end: span 4;
+    border-radius: 2em;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+}
+
+.tarjetacomida h2{
+    margin-bottom: 0;
+    color: rgb(185, 139, 10);
+}
+
+.tarjetacomida p{
+    margin-top: 0;
+    color:rgb(138, 105, 105);
+}
+
+.tarjetacomida li{
+    /* Color fuente de título de "Para Picar" */
+    color:rgb(138, 105, 105);
+    list-style: none;
+}
+
+.tarjetacomida img:hover {
+    object-fit: cover;
+    transition: 0.5s;
+    transform: scale(1.1)
+    /* transformación sobre foto de producto */
+    
+}
+
+/* FIN Clase de grilla para las comidas de "para picar" */
+
+/* Clase de grilla para las cervezas de "variedades" */
 
 .tarjeta  {
     display: grid;
@@ -362,6 +399,13 @@ button {
     .tarjeta {
         
         grid-column-end: span 6;
+        font-size: 210%;
+        
+    }
+
+    .tarjetacomida {
+        
+        grid-column-end: span 12;
         font-size: 210%;
         
     }
