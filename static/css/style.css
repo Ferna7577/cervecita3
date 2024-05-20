@@ -78,6 +78,7 @@
     text-align: center;
     justify-items: center;
     position: relative;
+    line-height: 1.4;
 }
 
 .tarjetacomida h2{
@@ -122,6 +123,7 @@
     position: absolute;
     background: rgba(0, 0, 0, 0.8);
     top: 30%;
+    line-height: 1.4;
     /* descripción sobre imagen */
 }
 
@@ -211,6 +213,7 @@ iframe {
 .cercade{
     display: grid;
     grid-column-end: span 5;
+    line-height: 1.4;
     
 }
 
@@ -252,6 +255,7 @@ iframe {
     color: rgb(185, 139, 10);
     grid-column-end: span 6;
     place-content: center;
+    line-height: 1.7;
 
 }
 /* FIN INDEX */
