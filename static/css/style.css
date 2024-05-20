@@ -87,12 +87,12 @@
 
 .tarjetacomida p{
     margin-top: 0;
-    color:rgb(138, 105, 105);
+    color:#c09393;
 }
 
 .tarjetacomida li{
     /* Color fuente de título de "Para Picar" */
-    color:rgb(138, 105, 105);
+    color:#c09393;
     list-style: none;
 }
 
@@ -141,12 +141,13 @@
 .tarjeta p{
     margin-top: 0;
     /* color fuente de: amargor, frio, etc de "variedades" */
-    color:rgb(138, 105, 105);
+    color:#c09393;
 }
 
 .tarjeta li{
     /* Color fuente de título de "variedades" */
-    color:rgb(138, 105, 105);
+    /* color:rgb(138, 105, 105); */
+    color:#c09393;
     list-style: none;
 }
 
@@ -259,10 +260,11 @@ iframe {
 
 #miFormulario {
     max-width: 400px;
+    /* max-height: 42; */
     margin: 0 auto;
 }
 #miFormulario input, textarea, select {
-    width: 100%;
+    width: 94%;
     padding: 10px;
     margin-bottom: 10px;
     border: 0.25em solid rgb(185,139,10);
@@ -273,6 +275,7 @@ iframe {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-style: oblique;
+    
 }
 
 #comidas, #bebidas {
