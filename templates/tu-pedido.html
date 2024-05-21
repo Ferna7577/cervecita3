@@ -22,11 +22,11 @@
 
             <nav class="navegar">
                 <ul> 
-                    <li><a href="../index.html"><button class='glowing-btn'>Inicio</button></a></li>
-                    <li><a href="./variedades.html"><button class='glowing-btn'>Variedades</button></a></li>
-                    <li><a href="./para-picar.html"><button class='glowing-btn'>Para picar</button></a></li>
-                    <li><a href="./tu-pedido.html"><button class='glowing-btn'>Tu pedido</button></a></li>
-                    <li><a href="./visitanos.html"><button class='glowing-btn'>Visitanos</button></a></li>
+                    <li><a href="../index.html" class='glowing-btn'>Inicio</a></li>
+                    <li><a href="./variedades.html" class='glowing-btn'>Variedades</a></li>
+                    <li><a href="./para-picar.html" class='glowing-btn'>Para picar</a></li>
+                    <li><a href="./tu-pedido.html" class='glowing-btn'>Tu pedido</a></li>
+                    <li><a href="./visitanos.html" class='glowing-btn'>Visitanos</a></li>
                 </ul>
             </nav>
         
@@ -67,9 +67,16 @@
 
         <label for="comentario">Comentario:</label>
         <textarea id="comentario" rows="4"></textarea>
+        
+        <label id="retiro">
+            <input type="checkbox" value="yes" />Retira por mostrador
+        </label>
+        <br>
+        <br>
 
         <button type="submit">Enviar</button>
     </form>
+
 
     <script src="../static/js/validation.js"></script>
 

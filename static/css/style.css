@@ -246,6 +246,7 @@ iframe {
     height: 100%;
     grid-column-end: span 6;
     place-content: center;
+    overflow: hidden;
      
 }
 
@@ -280,6 +281,14 @@ iframe {
     font-weight: bold;
     font-style: oblique;
     
+}
+
+#miFormulario #retiro{
+
+    display:inline-flex;
+    height: 35px;
+    font-size: 0.8em;
+
 }
 
 #comidas, #bebidas {
