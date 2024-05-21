@@ -48,7 +48,7 @@
     grid-column-start: 5;
 }
 
-.navegar a, .navegar ul, .navegar li {
+.navegar a, .navegar ul, .navegar li, .glowing-btn {
     /* muestra menu horizon-saca bullets-saca hipervinculo-margen 0 arribay abajo y 10px entre items */
     display: inline-block;
     list-style: none;
@@ -309,7 +309,8 @@ button {
 
 .glowing-btn {
   position: relative;
-  color: rgb(185,139,10);
+  /* color: rgb(185,139,10); */
+  color: rgb(255,255,255);
   cursor: pointer;
   padding: 0.35em 1em;
   border: 0.15em solid rgb(185,139,10);
