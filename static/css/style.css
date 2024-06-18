@@ -1,10 +1,9 @@
 
 
 .contenedor {
-    
+
     background-color: rgb(12, 12, 12);
-    
-	font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.8vw;
     color: azure;    	
 }
@@ -34,7 +33,7 @@
 
 .icono h1{
     /* color de la fuente del logo */
-    color: rgb(185,139,10);;
+    color: rgb(185,139,10);
     /* color: var(--glow-color);   */
     
 }
@@ -49,7 +48,8 @@
 }
 
 .navegar a, .navegar ul, .navegar li, .glowing-btn {
-    /* muestra menu horizon-saca bullets-saca hipervinculo-margen 0 arribay abajo y 10px entre items */
+    /* muestra menu horizon-saca bullets-saca hipervinculo-margen 3 entre items */
+    margin: 3px; /*por corrección*/
     display: inline-block;
     list-style: none;
     text-decoration: none;
@@ -88,12 +88,14 @@
 
 .tarjetacomida p{
     margin-top: 0;
-    color:#c09393;
+    color: rgb(185,139,10); /*color de Fuentes - por corrección*/
+    /*color:#c09393;*/
 }
 
 .tarjetacomida li{
     /* Color fuente de título de "Para Picar" */
-    color:#c09393;
+    color: rgb(185,139,10); /*color de Fuentes - por corrección*/
+    /*color:#c09393;*/
     list-style: none;
 }
 
@@ -143,13 +145,15 @@
 .tarjeta p{
     margin-top: 0;
     /* color fuente de: amargor, frio, etc de "variedades" */
-    color:#c09393;
+    color: rgb(185,139,10); /*color de Fuentes - por corrección*/
+    /*color:#c09393;*/
 }
 
 .tarjeta li{
     /* Color fuente de título de "variedades" */
     /* color:rgb(138, 105, 105); */
-    color:#c09393;
+    color: rgb(185,139,10); /*color de Fuentes - por corrección*/
+    /*color:#c09393;*/
     list-style: none;
 }
 
@@ -214,7 +218,7 @@ iframe {
     display: grid;
     grid-column-end: span 5;
     line-height: 1.4;
-    
+    color: rgb(185,139,10); /*color de Fuentes - por corrección*/
 }
 
 .cercade h3, ul, ol{
@@ -226,7 +230,8 @@ iframe {
 
 .cercade li {
     
-    color: azure;
+    color: rgb(185,139,10); /*color de Fuentes - por corrección*/
+    /*color: azure;*/
     font-size: 2vw;
 }
 
@@ -264,16 +269,22 @@ iframe {
 /* ESTILO PARA FORMULARIOS */
 
 #miFormulario {
+
+    color: rgb(185,139,10); /*color de Fuentes - por corrección*/
     max-width: 400px;
     /* max-height: 42; */
     margin: 0 auto;
+
 }
+
 #miFormulario input, textarea, select {
+
     width: 94%;
     padding: 10px;
     margin-bottom: 10px;
     border: 0.25em solid rgb(185,139,10);
     border-radius: 0.45em;
+
 }
 
 #miFormulario option, select, input, #comentario {
